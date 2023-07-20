@@ -42,22 +42,24 @@ body::before{
     /* display: flex;
     justify-content: center; */
     text-align: center;
-    min-width: 42vh;
+    width: 46vh;
 }
 
 .card{
     border: 2px solid black;
     border-radius: 10px;
     background-color: white;
-    height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    box-shadow: 5px 10px 30px 1px black;
-    min-width: 45vh;
-    min-height: 15vh;
+    gap: 1rem;
+    box-shadow: 5px 10px 30px 2px;
+    width: 45vh;
+    min-height: 20vh;
+    max-height: 50vh;
+    padding: 1rem;
+    /* max-width: 45vh; */
 }
 
 .card .change{
@@ -68,4 +70,11 @@ body::before{
     padding: 0.3rem;
     width: 10vh;
     font-size: inherit;
+}
+
+.card .text-area{
+    line-height: 1.5;
+    display: inline-block;
+    text-align: center;
+    padding: 0.2rem 2rem;
 }
