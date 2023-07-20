@@ -1,18 +1,35 @@
-body{
-    background-image: url('image/library\ use.jpg');   
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    position: relative;
+}
+
+body::before{
+    content: '';
+    background-image: url('image/library\ use.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;    
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100%;
+    opacity: 0.8;
 }
 
 .container{
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    /* background-color: #fff; */
-    min-width: 35vh;
-    min-height: 15vh;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .header{
@@ -22,8 +39,10 @@ body{
     margin: 0rem 0rem 2rem 0rem;
     color: #fff;
     background-color: #000;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    min-width: 42vh;
 }
 
 .card{
@@ -35,7 +54,18 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    box-shadow: 5px 5px 1px 0.2px black;
+    gap: 1.5rem;
+    box-shadow: 5px 10px 30px 1px black;
+    min-width: 45vh;
+    min-height: 15vh;
 }
 
+.card .change{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 0.1rem;
+    padding: 0.3rem;
+    width: 10vh;
+    font-size: inherit;
+}
