@@ -33,7 +33,7 @@ body::before{
 }
 
 .header{
-    border: 2px solid black ;
+    border: 2px solid rgb(255, 246, 246) ;
     padding: 0.6rem;
     font-size: 1.2rem;
     margin: 0rem 0rem 2rem 0rem;
@@ -62,6 +62,18 @@ body::before{
     /* max-width: 45vh; */
 }
 
+.card .text-area{
+    line-height: 1.5;
+    display: inline-block;
+    text-align: center;
+    padding: 0.2rem 2rem;
+}
+
+.card .quote-giver{
+    color: rgb(233, 35, 35);
+    font-size: 1.3rem;
+}
+
 .card .change{
     border: none;
     background-color: black;
@@ -72,9 +84,6 @@ body::before{
     font-size: inherit;
 }
 
-.card .text-area{
-    line-height: 1.5;
-    display: inline-block;
-    text-align: center;
-    padding: 0.2rem 2rem;
+.change button:active{
+background-color: lightblue;
 }
