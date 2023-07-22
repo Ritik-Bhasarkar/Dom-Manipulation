@@ -42,7 +42,7 @@ body::before{
     /* display: flex;
     justify-content: center; */
     text-align: center;
-    width: 46vh;
+    width: 40vh;
 }
 
 .card{
@@ -85,5 +85,5 @@ body::before{
 }
 
 .change button:active{
-background-color: lightblue;
+    background-color: lightblue;
 }
